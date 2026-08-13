@@ -12,3 +12,11 @@ vcftools \
 
 tabix -p vcf /Data2/amrita/vcf_info/final_filtered.vcf.gz
 
+#to get unzipped version
+#vcftools \
+ #--gzvcf pass_snps_filtered.vcf.gz \
+ #--remove remove_samples.txt \
+ #--max-missing 0.95 \
+ # --recode \
+ #--recode-INFO-all \
+  #--out final_filtered
